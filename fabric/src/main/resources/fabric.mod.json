@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "calyx",
+  "version": "${version}",
+  "name": "Calyx",
+  "description": "",
+  "authors": [
+    "cao_awa",
+    "草二号机"
+  ],
+  "contributors": [
+    "cao_awa",
+    "草二号机"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/calyx",
+    "sources": "https://github.com/cao-awa/Calyx",
+    "issues": "https://github.com/cao-awa/Calyx/issues"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/*"
+      }
+    }
+  },
+  "accessWidener": "calyx.accesswidener",
+  "license": "GPL-3.0",
+  "icon": "assets/calyx/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.cao.awa.calyx.CalyxFabric"
+    ],
+    "client": [
+      "com.github.cao.awa.calyx.CalyxFabricClient"
+    ],
+    "server": [
+      "com.github.cao.awa.calyx.CalyxFabricServer"
+    ]
+  },
+  "mixins": [
+    "calyx.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric-language-kotlin": "1.13.4+kotlin.2.2.0",
+    "minecraft": ">=1.21.6",
+    "java": ">=21",
+    "fabric": "*"
+  },
+  "recommends": {
+    "lithium": "*",
+    "sepals": ">=1.0.21-FIX2",
+    "annuus": ">=1.0.11-SNAPSHOT"
+  },
+  "breaks": {
+    "optifabric": "*"
+  }
+}
